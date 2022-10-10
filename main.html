@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>点击</button>
+    <div class = "box1">
+        <div class="box2"></div>
+    </div>
+    <style>
+        .box1{
+            position: relative;
+            width:200px;
+            height:200px;
+            background: red;
+        }
+        .box2{
+            position: absolute;
+            width:100px;
+            height:100px;
+            background:green;
+            left:50%;
+            transform: translateX(-50%);
+        }
+        
+    </style>
+    <script>
+        // const a = ()=>{
+        //     console.log(1);
+        //     return function b(){
+        //         console.log(2);
+        //     }
+        // }
+        // // function a(){
+        // //     console.log(1);
+        // //     return function b(){
+        // //         console.log(2);
+        // //     }
+        // // }
+        var btn = document.querySelector('button');
+        btn.onclick = a();
+        btn.onclike = a;
+
+        // class Dog{
+        //     static dog(){
+        //         console.log(this);
+        //     }
+        //     bark(){
+        //         console.log('狗回家哦')
+        //     }
+        // }
+        // var dog =new Dog()
+        // dog.bark()
+        // Dog.bark()
+
+        // var x = new Boolean(false);
+        // if(x){
+        //     alert('h1');
+        // }
+        // var y = Boolean(0);
+        // if(y){
+        //     alert('hello');
+        // }
+        // let obj = {
+        //     num1:117
+        // }
+        // let res = obj;
+        // obj.child = obj = {num2:935}
+        // var x = y = res.child.num2;
+        // console.log(obj.child);
+        // console.log(res.num1);
+        // console.log(y);
+
+        // function A(x){
+        //     this.x = x;
+        // }
+        // A.prototype.x = 1;
+        // function B(x){
+        //     this.x = x;
+        // }
+        // B.prototype = new A();
+        // var a = new A(2), b = new B(3);
+        // delete b.x;
+        // console.log(a.x, b.x)
+
+        // function control(x){
+        //     if(x === 3) throw new Error("break")
+        // }
+        // function foo(x = 6){
+        //     return {
+        //         next:() => {
+        //             control(x);
+        //             return {done: !x,value:x && x--};
+        //         }
+        //     }
+        // }
+        // let x = new Object;
+        // x[Symbol.iterator] = foo;
+        // for(let i of x) console.log(i);
+
+        let a = 1;
+        let obj = {
+            x:1
+        }
+        delete a;
+        delete obj.x;
+        delete 2;
+        console.log(a);
+        console.log(obj.x);
+        console.log(2)
+    </script>
+</body>
+</html>
